@@ -20,63 +20,6 @@
 
 @keyframes rainbow {
   0% {
-    color: #ff0000;
-  }
-  14% {
-    color: #ff7f00;
-  }
-  28% {
-    color: #ffff00;
-  }
-  42% {
-    color: #00ff00;
-  }
-  57% {
-    color: #0000ff;
-  }
-  71% {
-    color: #8b00ff;
-  }
-  85% {
-    color: #ff00ff;
-  }
-  100% {
-    color: #ff0000;
-  }
-}
-
-@keyframes rainbow2 {
-  0% {
-    color: #ff3737; /* deeper red */
-  }
-  12% {
-    color: #ffa07a; /* orange-peach */
-  }
-  25% {
-    color: #ffff7f; /* bright yellow */
-  }
-  37% {
-    color: #34c759; /* lime green */
-  }
-  50% {
-    color: #03a9f4; /* sky blue */
-  }
-  62% {
-    color: #7a288a; /* rich purple */
-  }
-  75% {
-    color: #ff69b4; /* magenta */
-  }
-  87% {
-    color: #ff99cc; /* pastel pink */
-  }
-  100% {
-    color: #ff3737; /* deeper red */
-  }
-}
-
-@keyframes rainbow3 {
-  0% {
     color: #ff3737; /* deeper red */
   }
   6% {
@@ -133,5 +76,9 @@
 }
 
 .rainbow-hover {
-  animation: rainbow3 10s linear infinite;
+  animation: rainbow 10s linear infinite;
+}
+
+.rainbow-hover:hover {
+  color: #007bff;
 }

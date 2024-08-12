@@ -16,19 +16,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+    });
+    </script> 
   </head>  
   <body class="body mt-8">
-    <header>
-      <nav class="container mx-auto flex justify-between items-center">
-        <a href="/" class="press-start-2p-regular text-xl text-white rainbow-hover">Swrnv-qc</a>
-        <div>
-          <a href="/blogs.html" class="press-start-2p-regular text-white rainbow-hover mr-4">Blogs</a>
-          <a href="/contact.html" class="press-start-2p-regular text-white rainbow-hover">Contact</a>
-        </div>
-      </nav>
-    </header>
-    <h1 class="press-start-2p-regular text-3xl text-white">----------------------------------------------------------------</h1>
-    <main class="container mx-auto mt-2">
+    <div id="header"></div>
+    <main class="container mx-auto">
       <h1 class="press-start-2p-regular text-3xl text-white">Welcome to contact</h1>
     </main>
   </body>
