@@ -1,0 +1,137 @@
+.body {
+  background-color: black;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+}
+
+.press-start-2p-small {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+}
+
+.body {
+  background-color: black;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #ff0000;
+  }
+  14% {
+    color: #ff7f00;
+  }
+  28% {
+    color: #ffff00;
+  }
+  42% {
+    color: #00ff00;
+  }
+  57% {
+    color: #0000ff;
+  }
+  71% {
+    color: #8b00ff;
+  }
+  85% {
+    color: #ff00ff;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
+@keyframes rainbow2 {
+  0% {
+    color: #ff3737; /* deeper red */
+  }
+  12% {
+    color: #ffa07a; /* orange-peach */
+  }
+  25% {
+    color: #ffff7f; /* bright yellow */
+  }
+  37% {
+    color: #34c759; /* lime green */
+  }
+  50% {
+    color: #03a9f4; /* sky blue */
+  }
+  62% {
+    color: #7a288a; /* rich purple */
+  }
+  75% {
+    color: #ff69b4; /* magenta */
+  }
+  87% {
+    color: #ff99cc; /* pastel pink */
+  }
+  100% {
+    color: #ff3737; /* deeper red */
+  }
+}
+
+@keyframes rainbow3 {
+  0% {
+    color: #ff3737; /* deeper red */
+  }
+  6% {
+    color: #ffa07a; /* orange-peach */
+  }
+  12% {
+    color: #ffd700; /* golden yellow */
+  }
+  18% {
+    color: #ffff7f; /* bright yellow */
+  }
+  24% {
+    color: #ccff00; /* chartreuse */
+  }
+  30% {
+    color: #34c759; /* lime green */
+  }
+  36% {
+    color: #00ff00; /* green */
+  }
+  42% {
+    color: #03a9f4; /* sky blue */
+  }
+  48% {
+    color: #007bff; /* azure */
+  }
+  54% {
+    color: #7a288a; /* rich purple */
+  }
+  60% {
+    color: #b300b3; /* magenta */
+  }
+  66% {
+    color: #ff69b4; /* magenta */
+  }
+  72% {
+    color: #ff99cc; /* pastel pink */
+  }
+  78% {
+    color: #ffc0cb; /* baby pink */
+  }
+  84% {
+    color: #ffbdbd; /* pale pink */
+  }
+  90% {
+    color: #ff99cc; /* pastel pink */
+  }
+  96% {
+    color: #ffa07a; /* orange-peach */
+  }
+  100% {
+    color: #ff3737; /* deeper red */
+  }
+}
+
+.rainbow-hover {
+  animation: rainbow3 10s linear infinite;
+}
