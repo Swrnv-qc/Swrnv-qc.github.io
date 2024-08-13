@@ -75,10 +75,10 @@
   }
 }
 
-.rainbow-hover {
+.rainbow {
   animation: rainbow 10s linear infinite;
 }
 
-.rainbow-hover:hover {
+.rainbow:hover {
   color: #007bff;
 }
