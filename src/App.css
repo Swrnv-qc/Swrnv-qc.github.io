@@ -1,5 +1,19 @@
+@font-face {
+  font-family: "Source Code Pro";
+  src: url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+}
 body {
-  font-family: sans-serif;
+  font-family: "Source Code Pro";
+}
+
+.content {
+  font-weight: 100;
+  font-size: 2rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Container for the scrolling text */
@@ -13,9 +27,9 @@ body {
 /* Scrolling text */
 .text-art {
   position: absolute;
-  white-space: nowrap;
+  white-space: pre;
   font-family: monospace;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 2rem; /* Match container height */
   padding-left: 100%; /* Start off-screen to the right */
   animation: scroll 10s linear infinite;
@@ -31,9 +45,43 @@ body {
 }
 
 
+/* code {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.ascii-container {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+pre {
+  margin: 0;
+}
+
 code {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: monospace;
+  font-size: 0.3rem;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  code {
+    font-size: 1rem;
+  }
+
+  .text-art {
+    font-size: 2rem;
+  }
+
+  .content {
+    font-size: 6rem;
+  }
 }
