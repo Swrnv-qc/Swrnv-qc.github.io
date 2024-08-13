@@ -44,6 +44,16 @@ document.addEventListener("DOMContentLoaded", function () {
         historyIndex = commandHistory.length;
         input.value = "";
       }
+    } else if (event.key === "Tab") {
+      event.preventDefault();
+      const autocompleteOptions = ["about", "contact", "clear", "help"];
+      const inputText = input.value.trim();
+      const matchingOptions = autocompleteOptions.filter((option) =>
+        option.startsWith(inputText)
+      );
+      if (matchingOptions.length > 0) {
+        input.value = matchingOptions[0];
+      }
     }
   });
 
