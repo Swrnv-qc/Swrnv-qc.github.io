@@ -2,14 +2,34 @@ body {
   font-family: sans-serif;
 }
 
+/* Container for the scrolling text */
+.scroll-container {
+  position: relative;
+  width: 100%;
+  height: 2rem; /* Adjust based on text size */
+  overflow: hidden;
+}
+
+/* Scrolling text */
 .text-art {
+  position: absolute;
+  white-space: nowrap;
   font-family: monospace;
   font-size: 1rem;
-  line-height: 1;
-  overflow: auto;
-  padding: 1rem;
-  white-space: pre;
+  line-height: 2rem; /* Match container height */
+  padding-left: 100%; /* Start off-screen to the right */
+  animation: scroll 10s linear infinite;
 }
+
+@keyframes scroll {
+  100% {
+    transform: translateX(0);
+  }
+  0% {
+    transform: translateX(-100%);
+  }
+}
+
 
 code {
   position: absolute;
