@@ -2,28 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Swrnv-qc</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="terminal-line">
-      <label>></label>
-      <input type="text" id="input" />
+    <div id="terminal">
+      <div id="terminal-output"></div>
+      <div id="input-line" class="terminal-line">
+        <span class="prompt">&gt;</span>
+        <input type="text" id="input" autofocus />
+      </div>
     </div>
-    <div id="terminal-output"></div>
   </body>
 </html>
