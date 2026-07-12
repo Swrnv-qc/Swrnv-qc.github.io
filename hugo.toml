@@ -1,11 +1,19 @@
 baseURL = 'https://swrnv-qc.github.io/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+locale = 'en-US'
+title = 'swrnv-qc'
 theme = 'terminal'
+
+[params]
+  subtitle = 'Gen AI + Backend Engineer | LLM pipelines, vector search, full-stack systems'
+  keywords = ['Gen AI', 'Backend Engineer', 'LangChain', 'LangGraph', 'Qdrant', 'FastAPI', 'Python', 'Go', 'Burr']
 
 [params.logo]
   logoText = "Swrnv-qc"
   logoHomeLink = "/"
+
+[params.twitter]
+  site = '@swrnv_qc'
+  creator = '@swrnv_qc'
 
 [menu]
   [[menu.main]]

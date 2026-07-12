@@ -1,4 +1,3 @@
-/* Black and white theme override - loads after all theme CSS */
 :root {
   --background: #000000;
   --foreground: #c0bfbc;
@@ -8,7 +7,6 @@
   --comment: #888888;
 }
 
-/* Make footer stick to bottom */
 html {
   height: 100%;
 }
@@ -21,14 +19,12 @@ body {
 }
 
 .container {
-  display: flex !important;
-  flex-direction: column !important;
+  display: flex;
+  flex-direction: column;
   flex: 1;
   min-height: 100vh;
   margin: 0 auto;
-  width: 100%;
   max-width: 864px;
-  padding-bottom: 0 !important;
 }
 
 .content {
@@ -37,26 +33,23 @@ body {
 
 .footer {
   margin-top: auto;
-  padding-top: 40px !important;
-  padding-bottom: 5px !important;
-  opacity: 1 !important;
+  opacity: 1;
 }
 
-/* Responsive improvements */
 @media (max-width: 900px) {
   .container {
-    padding: 20px 15px 0 15px !important;
+    padding: 20px 15px 0 15px;
   }
-  
+
   .footer {
-    padding: 20px 0 10px 0 !important;
+    padding: 20px 0 10px 0;
   }
-  
+
   .footer__inner {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .footer .copyright {
     flex-direction: column;
     gap: 10px;
